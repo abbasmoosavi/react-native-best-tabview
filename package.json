@@ -75,12 +75,6 @@
     "react-native-gesture-handler": "*",
     "react-native-reanimated": "*"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
-    }
-  },
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
@@ -90,5 +84,14 @@
   },
   "dependencies": {
     "prop-types": "^15.5.8"
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   }
 }
